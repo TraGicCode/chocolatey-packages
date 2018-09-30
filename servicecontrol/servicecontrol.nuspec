@@ -5,6 +5,7 @@
     <version>3.1.2</version>
     <title>ServiceControl (Install)</title>
     <authors>Particular Software</authors>
+    <owners>Michael Fyffe</owners>
     <projectUrl>https://docs.particular.net/servicecontrol</projectUrl>
     <projectSourceUrl>https://github.com/particular/servicecontrol</projectSourceUrl>
     <docsUrl>https://docs.particular.net/servicecontrol</docsUrl>
