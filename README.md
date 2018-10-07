@@ -5,7 +5,7 @@
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/tragiccode](https://chocolatey.org/profiles/tragiccode)
 
-This repository contains the chocolatey packages that i maintain on the chocolatey.org community feed.
+This project contains the automatic updating packages for the public community chocolatey feed.
 
 ## Contributing
 
