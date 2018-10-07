@@ -20,7 +20,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: TraGicCode/chocolatey-packages
   github_api_key:
-    secure: RFrVBXsmSoxLD3NQTECyeJisnbJFw4Ii0WJC07o3GI48EGt6rPqFgTd/QBscDx+l
+    secure: JRXgoDhV93keutgnI9vYLjqT6Vp0U/Ym0gits4uZdzGc41ss3XHBIlVY9U4Qn/qD
 
   github_username: TraGicCode
   github_password:
@@ -36,10 +36,10 @@ environment:
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id: 0e5b8e0a4ba3275185e3ff9c0d25625f
+  gist_id: 84c75759524db36e44699a561879a7ec
 
   # Force test: gist id for test results
-  gist_id_test: 0e5b8e0a4ba3275185e3ff9c0d25625f
+  gist_id_test: 84c75759524db36e44699a561879a7ec
 
   # Chocolatey API key - to push updated packages
   api_key:
