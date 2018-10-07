@@ -22,6 +22,10 @@ environment:
   github_api_key:
     secure: ++Jaan6NUVp8GRd6Z3Y/ALvYelCxWg2DNTqtupIQhLrmwakHvMCxVPJm7fqWhAR2 #https://ci.appveyor.com/tools/encrypt
 
+  github_username: tragiccode
+  github_password:
+    secure: qpmJIVtd+lxddyeZyXZqqg==
+
 
   # Mail credentials - for error notifications
   mail_user:
