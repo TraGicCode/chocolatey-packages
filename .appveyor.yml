@@ -20,7 +20,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: tragiccode/chocolatey-packages
   github_api_key:
-    secure: 880IPMw7n5EjtTYKfIFcq0bGji+XktoGEvBHZpfB/IbKNs+1vJhFGii64tBe0xEk #https://ci.appveyor.com/tools/encrypt
+    secure: ++Jaan6NUVp8GRd6Z3Y/ALvYelCxWg2DNTqtupIQhLrmwakHvMCxVPJm7fqWhAR2 #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
