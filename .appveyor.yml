@@ -20,7 +20,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: tragiccode/chocolatey-packages
   github_api_key:
-    secure: 17jl6lpe/Hp0HmTwhRWN+RoFqVuNBZKf3rJI46s5TdUfSCeNMiQvYe7qNlmC7ZcX
+    secure: gSFauqiiBoRfceoouZQlTpqwlB0/5SdWRvg8X2ov8Js=
 
   github_username: tragiccode
   github_password:
