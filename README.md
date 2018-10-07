@@ -1,5 +1,10 @@
 # Chocolatey-Packages
 
+[![](https://ci.appveyor.com/api/projects/status/github/tragiccode/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/tragiccode/chocolatey-packages)
+[Update status](https://gist.github.com/tragiccode/84c75759524db36e44699a561879a7ec)
+[![](http://transparent-favicon.info/favicon.ico)](#)
+[chocolatey/tragiccode](https://chocolatey.org/profiles/tragiccode)
+
 This repository contains the chocolatey packages that i maintain on the chocolatey.org community feed.
 
 ## Contributing
