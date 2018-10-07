@@ -1,7 +1,7 @@
 # Chocolatey-Packages
 
 [![](https://ci.appveyor.com/api/projects/status/github/tragiccode/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/tragiccode/chocolatey-packages)
-[Update status](https://gist.github.com/tragiccode/YOUR_GIST_ID_HERE)
+[Update status](https://gist.github.com/tragiccode/2a4b4e75ad30d14c68704a1675f13a0f)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/tragiccode](https://chocolatey.org/profiles/tragiccode)
 
