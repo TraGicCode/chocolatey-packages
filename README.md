@@ -1,6 +1,6 @@
 # Chocolatey-Packages
 
-This repository contains the chocolatey packages that i maintain on the public chocolatey feed.
+This repository contains the chocolatey packages that i maintain on the chocolatey.org community feed.
 
 ## Contributing
 
