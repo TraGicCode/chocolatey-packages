@@ -7,8 +7,6 @@ max_jobs: 1
 branches:
   only:
   - master
-build:
- verbosity: detailed
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
@@ -52,6 +50,7 @@ init:
 
 install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
+- ps: 'gci env:'
 - ps: $PSVersionTable
 - git --version
 - choco --version
