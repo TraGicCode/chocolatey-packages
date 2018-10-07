@@ -18,11 +18,11 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: tragiccode/chocolatey-packages
+  github_user_repo: TraGicCode/chocolatey-packages
   github_api_key:
     secure: RFrVBXsmSoxLD3NQTECyeJisnbJFw4Ii0WJC07o3GI48EGt6rPqFgTd/QBscDx+l
 
-  github_username: tragiccode
+  github_username: TraGicCode
   github_password:
     secure: qpmJIVtd+lxddyeZyXZqqg==
 
