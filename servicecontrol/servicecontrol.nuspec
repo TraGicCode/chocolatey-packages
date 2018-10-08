@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>servicecontrol</id>
-    <version>3.2.1.20181007</version>
+    <version>3.2.1</version>
     <title>ServiceControl (Install)</title>
     <authors>Particular Software</authors>
     <owners>Michael Fyffe</owners>
@@ -14,14 +14,17 @@
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/servicecontrol</packageSourceUrl>
     <releaseNotes>https://github.com/Particular/ServiceControl/releases</releaseNotes>
     <iconUrl>https://docs.particular.net/content/images/menu/servicecontrol-icon.svg</iconUrl>
-    <tags>servicecontrol nservicebus particular admin</tags>
     <description>
 ServiceControl is a suite of back-end tools that collect useful information about a running NServiceBus system.
 
 ServiceControl on installation utilizes a trial that expires after 14 days.  In order to install a non-trial license please follow the steps outlined in the documentation here https://docs.particular.net/servicecontrol/license.
 
 **NOTE: It's best practice to install the license VIA your organizations choice of configuration management tool (puppet, chef, ansible, etc.)**
-  </description>
+    </description>
+    <tags>servicecontrol nservicebus particular admin</tags>
+    <dependencies>
+      <dependency id="dotnet4.6.1" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
