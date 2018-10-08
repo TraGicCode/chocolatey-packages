@@ -22,9 +22,6 @@ ServiceControl on installation utilizes a trial that expires after 14 days.  In 
 **NOTE: It's best practice to install the license VIA your organizations choice of configuration management tool (puppet, chef, ansible, etc.)**
     </description>
     <tags>servicecontrol nservicebus particular admin</tags>
-    <dependencies>
-      <dependency id="dotnet4.6.1" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
