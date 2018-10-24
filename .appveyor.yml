@@ -15,7 +15,10 @@ environment:
   # Force test: use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
 
-  # Github token to commit pushed packages to repository
+  # Github token used for 
+  # 1. Commiting nuspec changes from package updates to the github repository
+  # 2. Creating gists to contain the update report from the build
+  # Therefore make sure the personal access token has public_repo & gist scope
   github_user_repo: tragiccode/chocolatey-packages
   github_api_key:
     secure: lYtV00TAclXrkiQEXsYP0sXKgbixZOWZSXMc5n4v5GmLbawV5c1Apfz2Yw5dQZFH
