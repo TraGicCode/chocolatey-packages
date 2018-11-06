@@ -47,8 +47,8 @@ environment:
     secure: TK3Z3rsRZYKjGVKmaslGK01b5cekOQICnz+ssNS3DtdRjNDNWP7ystONjXZZxs5v
 
 init:
-- git config --global user.email "chocolatey@realdimensions.net"
-- git config --global user.name "Chocolatey"
+- git config --global user.email "tragiccode-chocolatey-bot@users.noreply.github.com"
+- git config --global user.name "Tragiccode Chocolatey Bot"
 - git config --global core.safecrlf false
 
 install:
