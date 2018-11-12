@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>powersploit</id>
+    <version>3.0.0</version>
+    <title>PowerSploit (PowerShell Module)</title>
+    <authors>PowerShellMafia</authors>
+    <owners>Michael Fyffe</owners>
+    <projectUrl>https://github.com/PowerShellMafia/PowerSploit</projectUrl>
+    <licenseUrl>https://github.com/PowerShellMafia/PowerSploit/blob/master/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/PowerShellMafia/PowerSploit</projectSourceUrl>
+    <docsUrl>https://github.com/PowerShellMafia/PowerSploit</docsUrl>
+    <bugTrackerUrl>https://github.com/PowerShellMafia/PowerSploit/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/powersploit</packageSourceUrl>
+    <releaseNotes>https://github.com/PowerShellMafia/PowerSploit/releases</releaseNotes>
+    <iconUrl>https://2.bp.blogspot.com/-tkkPH5cClDk/WVCC8Cw2_iI/AAAAAAAAF7g/BiAGcXQIjXoXtQUqzvk7mVJXgTMvyaD9wCLcBGAs/s320/IC853368.png</iconUrl>
+    <description>
+        PowerSploit is a collection of Microsoft PowerShell modules that can be used to aid penetration testers during all phases of an assessment.
+    </description>
+    <tags>powershell module powersploit pentest penetration exploitation exploit admin</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
