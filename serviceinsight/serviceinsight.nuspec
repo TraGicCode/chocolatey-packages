@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>serviceinsight</id>
+    <version>1.10.2</version>
+    <title>ServiceInsight (Install)</title>
+    <authors>Particular Software</authors>
+    <owners>Michael Fyffe</owners>
+    <projectUrl>https://docs.particular.net/serviceinsight</projectUrl>
+    <licenseUrl>https://github.com/Particular/ServiceInsight/blob/master/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/particular/serviceinsight</projectSourceUrl>
+    <docsUrl>https://docs.particular.net/serviceinsight</docsUrl>
+    <bugTrackerUrl>https://github.com/Particular/ServiceInsight/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/serviceinsight</packageSourceUrl>
+    <releaseNotes>https://github.com/Particular/ServiceInsight/releases</releaseNotes>
+    <iconUrl>https://docs.particular.net/content/images/menu/serviceinsight-icon.svg</iconUrl>
+    <description>
+    ServiceInsight is a desktop application with features tailored to developers' needs. It allows for advanced debugging, tracking the flow of an individual message in the system, observing sagas, and more.
+    </description>
+    <tags>serviceinsight nservicebus particular admin</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
