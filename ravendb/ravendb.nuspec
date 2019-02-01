@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ravendb</id>
+    <version>4.1.5</version>
+    <title>RavenDB (Install)</title>
+    <authors>Particular Software</authors>
+    <owners>Michael Fyffe</owners>
+    <projectUrl>https://ravendb.net</projectUrl>
+    <licenseUrl>https://github.com/ravendb/ravendb/blob/v4.1/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/particular/servicecontrol</projectSourceUrl>
+    <docsUrl>https://ravendb.net/docs/article-page/4.1/csharp</docsUrl>
+    <bugTrackerUrl>https://issues.hibernatingrhinos.com/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/ravendb</packageSourceUrl>
+    <releaseNotes>https://ravendb.net/docs/article-page/4.1/csharp/start/whats-new</releaseNotes>
+    <iconUrl>https://ravendb.net/img/home/raven.png</iconUrl>
+    <description>
+A NoSQL Document Database that has been Fully Transactional for Over a Decade.
+
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/setup-as-service:` - specifies that ravendb should be configured to run as a windows service
+ * `/start-service:` - specifies that the ravendb service should be started after setup as a service
+ * `/install-path:` - Where to install the binaries to - defaults to "`$env:SystemDrive\RavenDB`"
+ * `/data-path:` - specifies the location of the database files - defaults to "`$env:SystemDrive\{install-path}\Server\RavenData`"
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+    </description>
+    <tags>ravendb nosql document database raven</tags>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
