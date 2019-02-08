@@ -13,7 +13,7 @@
     <bugTrackerUrl>https://issues.hibernatingrhinos.com/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/ravendb</packageSourceUrl>
     <releaseNotes>http://static.ravendb.net/logo-for-nuget.png</releaseNotes>
-    <iconUrl>https://ravendb.net/img/home/raven.png</iconUrl>
+    <iconUrl>http://static.ravendb.net/logo-for-nuget.png</iconUrl>
     <description>
 A NoSQL Document Database that has been Fully Transactional for Over a Decade.
 
