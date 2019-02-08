@@ -3,16 +3,16 @@
   <metadata>
     <id>ravendb</id>
     <version>4.1.4-patch-41009</version>
-    <title>RavenDB (Install)</title>
-    <authors>Particular Software</authors>
-    <owners>Michael Fyffe</owners>
+    <title>RavenDB</title>
+    <authors>Hibernating Rhinos</authors>
+    <owners>TraGicCode</owners>
     <projectUrl>https://ravendb.net</projectUrl>
     <licenseUrl>https://github.com/ravendb/ravendb/blob/v4.1/LICENSE</licenseUrl>
-    <projectSourceUrl>https://github.com/particular/servicecontrol</projectSourceUrl>
+    <projectSourceUrl>https://github.com/ravendb/ravendb</projectSourceUrl>
     <docsUrl>https://ravendb.net/docs/article-page/4.1/csharp</docsUrl>
     <bugTrackerUrl>https://issues.hibernatingrhinos.com/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/ravendb</packageSourceUrl>
-    <releaseNotes>https://ravendb.net/docs/article-page/4.1/csharp/start/whats-new</releaseNotes>
+    <releaseNotes>http://static.ravendb.net/logo-for-nuget.png</releaseNotes>
     <iconUrl>https://ravendb.net/img/home/raven.png</iconUrl>
     <description>
 A NoSQL Document Database that has been Fully Transactional for Over a Decade.
