@@ -14,6 +14,7 @@
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/ravendb</packageSourceUrl>
     <releaseNotes>http://static.ravendb.net/logo-for-nuget.png</releaseNotes>
     <iconUrl>http://static.ravendb.net/logo-for-nuget.png</iconUrl>
+    <summary>A NoSQL Document Database that has been Fully Transactional for Over a Decade.</summary>
     <description>
 A NoSQL Document Database that has been Fully Transactional for Over a Decade.
 
