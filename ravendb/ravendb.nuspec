@@ -12,7 +12,7 @@
     <docsUrl>https://ravendb.net/docs/article-page/4.1/csharp</docsUrl>
     <bugTrackerUrl>https://issues.hibernatingrhinos.com/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/ravendb</packageSourceUrl>
-    <releaseNotes>http://static.ravendb.net/logo-for-nuget.png</releaseNotes>
+    <releaseNotes>https://ravendb.net/docs/article-page/4.1/csharp/start/whats-new</releaseNotes>
     <iconUrl>http://static.ravendb.net/logo-for-nuget.png</iconUrl>
     <summary>A NoSQL Document Database that has been Fully Transactional for Over a Decade.</summary>
     <description>
