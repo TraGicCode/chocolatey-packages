@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64bit   = 'https://github.com/Particular/ServicePulse/releases/download/1.21.0/Particular.ServicePulse-1.21.0.exe'
-$checksum64 = 'c5d60396b3c459d6904296be273077d2283f523e652a30bcb313065e4ad5f487'
+$url64bit   = 'https://github.com/Particular/ServicePulse/releases/download/1.22.0/Particular.ServicePulse-1.22.0.exe'
+$checksum64 = 'afee5d2ea6a0f92fd99bc133d05f712e32c1de2d4ecd9c9bc6bdc73ff58c4de7'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
