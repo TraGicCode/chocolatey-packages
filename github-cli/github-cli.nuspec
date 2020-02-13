@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>github-cli</id>
+    <version>1.0.0</version>
+    <title>GitHub CLI (Install)</title>
+    <authors>GitHub</authors>
+    <owners>Michael Fyffe</owners>
+    <projectUrl>https://github.com/cli/cli</projectUrl>
+    <licenseUrl>https://github.com/cli/cli/blob/master/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/cli/cli</projectSourceUrl>
+    <docsUrl>https://github.com/cli/cli</docsUrl>
+    <bugTrackerUrl>https://github.com/cli/cli/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/github-cli</packageSourceUrl>
+    <releaseNotes>https://github.com/cli/cli/releases</releaseNotes>
+    <iconUrl>https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png</iconUrl>
+    <description>
+    `gh` is GitHub on the command line, and it's now available in beta. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.
+    </description>
+    <tags>github cli admin</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
