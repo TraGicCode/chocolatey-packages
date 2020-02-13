@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $latest_release = Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/cli/cli/releases/latest'
     $latest_release_zip = $latest_release.assets | Where-Object -FilterScript { $PSItem.browser_download_url -like "*amd64.zip" }
     @{
-        Version = $latest_release.tag_name
+        Version = $latest_release.tag_name.Substring(1)
         URL64   = $latest_release_zip.browser_download_url
     }
 
