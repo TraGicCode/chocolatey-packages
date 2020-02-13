@@ -3,7 +3,7 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url64bit   = 'https://github.com/cli/cli/releases/download/v0.5.4/gh_0.5.4_windows_amd64.zip'
-$checksum64 = '129ACA30B010BB89A32424B82B6468ACAAA559588F952819BA8C91237FA18326'
+$checksum64 = '129aca30b010bb89a32424b82b6468acaaa559588f952819ba8c91237fa18326'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
