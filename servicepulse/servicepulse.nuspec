@@ -7,7 +7,7 @@
     <authors>Particular Software</authors>
     <owners>Michael Fyffe</owners>
     <projectUrl>https://docs.particular.net/servicepulse</projectUrl>
-    <licenseUrl>https://github.com/Particular/ServicePulse/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/Particular/ServicePulse/blob/master/LICENSE.md</licenseUrl>
     <projectSourceUrl>https://github.com/particular/servicepulse</projectSourceUrl>
     <docsUrl>https://docs.particular.net/servicepulse</docsUrl>
     <bugTrackerUrl>https://github.com/Particular/ServicePulse/issues</bugTrackerUrl>
