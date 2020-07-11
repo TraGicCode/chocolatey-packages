@@ -25,7 +25,7 @@ function global:au_GetLatest {
     }
 
     @{
-        Version = $latest_release.tag_name
+        Version = $latest_release.tag_name.Substring(1)
         URL64   = $msi_download_url
     }
 
