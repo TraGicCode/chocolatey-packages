@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mongodb-database-tools</id>
+    <version>1.21.2</version>
+    <title>MongoDB Database Tools (Install)</title>
+    <authors>MongoDB Inc.</authors>
+    <owners>TraGicCode</owners>
+    <projectUrl>https://github.com/mongodb/mongo-tools</projectUrl>
+    <licenseUrl>https://github.com/mongodb/mongo-tools/blob/master/LICENSE.md</licenseUrl>
+    <projectSourceUrl>https://github.com/mongodb/mongo-tools</projectSourceUrl>
+    <docsUrl>https://docs.mongodb.com/database-tools</docsUrl>
+    <bugTrackerUrl>https://jira.mongodb.org/browse/TOOLS</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/mongodb-database-tools</packageSourceUrl>
+    <releaseNotes>https://github.com/mongodb/mongo-tools/releases</releaseNotes>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png</iconUrl>
+    <description>
+    The MongoDB Database Tools are a collection of command-line utilities for working with a MongoDB deployment.
+    </description>
+    <tags>mongo mongodb nosql document tools</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
