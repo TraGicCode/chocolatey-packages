@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongodb-database-tools</id>
-    <version>1.21.2</version>
+    <version>100.0.2</version>
     <title>MongoDB Database Tools (Install)</title>
     <authors>MongoDB Inc.</authors>
     <owners>TraGicCode</owners>
