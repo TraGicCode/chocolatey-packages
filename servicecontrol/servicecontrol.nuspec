@@ -23,7 +23,7 @@ ServiceControl on installation utilizes a trial that expires after 14 days.  In 
     </description>
     <tags>servicecontrol nservicebus particular admin</tags>
     <dependencies>
-      <dependency id="dotnet4.6.1" />
+      <dependency id="netfx-4.6.2" />
     </dependencies>
   </metadata>
   <files>
