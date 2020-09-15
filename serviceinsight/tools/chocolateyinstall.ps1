@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64bit   = 'https://github.com/Particular/ServiceInsight/releases/download/2.1.0/ServiceInsight-2.1.0.exe'
-$checksum64 = '9526a2704dad89df4bdbe38cf8081ae3736aa56cc91fb5d20b9fcbdb034cb0c5'
+$url64bit   = 'https://github.com/Particular/ServiceInsight/releases/download/2.2.0/ServiceInsight-2.2.0.exe'
+$checksum64 = '12a20235fb901f7606a32e6200114dc0419a6a2505b2a510970b73c2cb965f80'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
