@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 # Get latest version + download url of the software
 function global:au_GetLatest {
     $response = Invoke-RestMethod -Method Get -Uri "https://downloads.mongodb.org/tools/db/release.json"
-    $windows_zip_archive = $response.versions.downloads.archive.Where({ $PSItem.url -like "*.zip"})
+    $windows_zip_archive = $response.versions.downloads.Where({ $PSItem.name -like 'windows'}).archive.url
 
     @{
         Version = $response.versions.version
