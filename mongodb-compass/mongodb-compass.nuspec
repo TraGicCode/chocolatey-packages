@@ -15,7 +15,7 @@
     <releaseNotes>https://github.com/mongodb-js/compass/releases</releaseNotes>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png</iconUrl>
     <description>
-    The MongoDB GUI.
+    The MongoDB GUI. The full version of MongoDB Compass, with all features and capabilities.
     </description>
     <tags>mongo mongodb nosql document compass admin</tags>
   </metadata>
