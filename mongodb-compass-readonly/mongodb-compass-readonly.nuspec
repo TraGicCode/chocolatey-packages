@@ -9,10 +9,10 @@
     <projectUrl>https://github.com/mongodb-js/compass</projectUrl>
     <licenseUrl>https://github.com/mongodb-js/compass/blob/master/LICENSE</licenseUrl>
     <projectSourceUrl>https://github.com/mongodb-js/compass</projectSourceUrl>
-    <docsUrl>https://docs.mongodb.com/compass/master/</docsUrl>
+    <docsUrl>https://docs.mongodb.com/compass/current/</docsUrl>
     <bugTrackerUrl>https://jira.mongodb.org/projects/COMPASS/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/mongodb-compass</packageSourceUrl>
-    <releaseNotes>https://github.com/mongodb-js/compass/releases</releaseNotes>
+    <releaseNotes>https://docs.mongodb.com/compass/current/release-notes/</releaseNotes>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png</iconUrl>
     <description>
     The MongoDB GUI. This version is limited strictly to read operations, with all write and delete capabilities removed.
