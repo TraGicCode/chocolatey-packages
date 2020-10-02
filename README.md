@@ -7,6 +7,10 @@
 
 This project contains the automatic updating packages for the public community chocolatey feed.
 
+## How do i quickly and automatically publish a new package to chocolatey?
+
+When a new package is added simply update the nuspec version of the new package to an older version ( one that is not the latest ).  When the PR with the new package is merged into master, the CI/CD process will automatically see the version needs updating and update it ALONG with submitting this new package as a new package to the public chocolatey community feed.
+
 ## Contributing
 
 1. Fork it ( <https://github.com/tragiccode/chocolatey-packages/fork> )
