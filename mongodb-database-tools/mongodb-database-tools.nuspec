@@ -12,7 +12,7 @@
     <docsUrl>https://docs.mongodb.com/database-tools/</docsUrl>
     <bugTrackerUrl>https://jira.mongodb.org/browse/TOOLS</bugTrackerUrl>
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/mongodb-database-tools</packageSourceUrl>
-    <releaseNotes>https://github.com/mongodb/mongo-tools/releases</releaseNotes>
+    <releaseNotes>https://docs.mongodb.com/database-tools/release-notes/database-tools-changelog/</releaseNotes>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png</iconUrl>
     <description>
     The MongoDB Database Tools are a collection of command-line utilities for working with a MongoDB deployment.
