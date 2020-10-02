@@ -11,6 +11,16 @@ This project contains the automatic updating packages for the public community c
 
 When a new package is added simply update the nuspec version of the new package to an older version ( one that is not the latest ).  When the PR with the new package is merged into master, the CI/CD process will automatically see the version needs updating and update it ALONG with submitting this new package as a new package to the public chocolatey community feed.
 
+## How do i quickly re-submit an existing package locally
+
+You might want to resubmit an existing package locally if validation failed and you want to recreate and push the nuget package locally.  This can be done as shown below.
+
+```
+> cd C:\Source\chocolatey-packages\mongodb-database-tools
+> $au_Force = $true; .\update.ps1
+> choco push .\mongodb-database-tools.100.1.1.nupkg
+```
+
 ## Contributing
 
 1. Fork it ( <https://github.com/tragiccode/chocolatey-packages/fork> )
