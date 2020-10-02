@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongodb-database-tools</id>
-    <version>100.1.1</version>
+    <version>100.1.0</version>
     <title>MongoDB Database Tools (Install)</title>
     <authors>MongoDB Inc.</authors>
     <owners>TraGicCode</owners>
     <projectUrl>https://github.com/mongodb/mongo-tools</projectUrl>
     <licenseUrl>https://github.com/mongodb/mongo-tools/blob/master/LICENSE.md</licenseUrl>
     <projectSourceUrl>https://github.com/mongodb/mongo-tools</projectSourceUrl>
-    <docsUrl>https://docs.mongodb.com/database-tools</docsUrl>
+    <docsUrl>https://docs.mongodb.com/database-tools/</docsUrl>
     <bugTrackerUrl>https://jira.mongodb.org/browse/TOOLS</bugTrackerUrl>
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/mongodb-database-tools</packageSourceUrl>
     <releaseNotes>https://github.com/mongodb/mongo-tools/releases</releaseNotes>
