@@ -1,7 +1,7 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
-$url64bit   = 'https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.0.2.zip'
-$checksum64 = 'B722B9B495FDEA80B8AC2E55D5A4C109411630E5A98B3AAEB610DA160D49ADE5'
+$url64bit   = 'https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.1.1.zip'
+$checksum64 = '84b8e59fc930eba6ce3c3a9d35db5a68a5f6e8e3dc374c482eb3457ed938c3ce'
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
