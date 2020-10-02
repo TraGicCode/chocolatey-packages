@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mongodb-compass</id>
+    <version>1.22.1</version>
+    <title>MongoDB Compass Readonly (Install)</title>
+    <authors>MongoDB Inc.</authors>
+    <owners>TraGicCode</owners>
+    <projectUrl>https://github.com/mongodb-js/compass</projectUrl>
+    <licenseUrl>https://github.com/mongodb-js/compass/blob/master/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/mongodb-js/compass</projectSourceUrl>
+    <docsUrl>https://docs.mongodb.com/compass/master/</docsUrl>
+    <bugTrackerUrl>https://jira.mongodb.org/projects/COMPASS/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/mongodb-compass</packageSourceUrl>
+    <releaseNotes>https://github.com/mongodb-js/compass/releases</releaseNotes>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png</iconUrl>
+    <description>
+    The MongoDB GUI. This version is limited strictly to read operations, with all write and delete capabilities removed.
+    </description>
+    <tags>mongo mongodb nosql document compass admin readonly</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
