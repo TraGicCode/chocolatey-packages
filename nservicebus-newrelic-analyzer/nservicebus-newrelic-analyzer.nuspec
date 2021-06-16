@@ -17,6 +17,9 @@
     <description>
       A Roslyn Diagnostic Analyzer and corresponding Code Fix identify and automatically add NewRelic.Agent.Api [Transaction] attributes to all NServiceBus v6+ related message handlers.
     </description>
+    <dependencies>
+      <dependency id="chocolatey-visualstudio.extension" version="1.9.0" />
+    </dependencies>
     <tags>nservicebus newrelic analyzers roslyn NServiceBus.NewRelic.Analyzer vsix</tags>
   </metadata>
   <files>
