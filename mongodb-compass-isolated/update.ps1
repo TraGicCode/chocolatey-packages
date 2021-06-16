@@ -14,7 +14,9 @@ function global:au_SearchReplace {
 # Get latest version + download url of the software
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    $latest_release = Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/mongodb-js/compass/releases/latest'
+    $releases =  Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/mongodb-js/compass/releases'
+    # Latest non-pre-release
+    $latest_release = $releases.Where({ $PSItem.name -match '^[0-9]+\.[0-9]+\.[0-9]+$'})[0]
     $version = $latest_release.name
     foreach( $asset in $latest_release.assets) 
     {
