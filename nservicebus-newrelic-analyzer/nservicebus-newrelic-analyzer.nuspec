@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nservicebus-newrelic-analyzer</id>
-    <version>1.0.1.20210616</version>
+    <version>1.0.0</version>
     <title>NServicebus NewRelic Analyzer</title>
     <authors>Particular Software</authors>
     <owners>Michael Fyffe</owners>
