@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nservicebus-newrelic-analyzer</id>
+    <version>1.0.1.20210616</version>
+    <title>NServicebus NewRelic Analyzer</title>
+    <authors>Particular Software</authors>
+    <owners>Michael Fyffe</owners>
+    <projectUrl>https://github.com/TraGicCode/NServiceBus.NewRelic.Analyzer</projectUrl>
+    <licenseUrl>https://github.com/TraGicCode/NServiceBus.NewRelic.Analyzer/blob/master/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/TraGicCode/NServiceBus.NewRelic.Analyzer</projectSourceUrl>
+    <docsUrl>https://github.com/TraGicCode/NServiceBus.NewRelic.Analyzer</docsUrl>
+    <bugTrackerUrl>https://github.com/TraGicCode/NServiceBus.NewRelic.Analyzer/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/nservicebus-newrelic-analyzer</packageSourceUrl>
+    <releaseNotes>https://github.com/TraGicCode/NServiceBus.NewRelic.Analyzer/releases</releaseNotes>
+    <iconUrl>https://raw.githubusercontent.com/TraGicCode/NServiceBus.NewRelic.Analyzer/master/images/newrelic-icon.png</iconUrl>
+    <description>
+      A Roslyn Diagnostic Analyzer and corresponding Code Fix identify and automatically add NewRelic.Agent.Api [Transaction] attributes to all NServiceBus v6+ related message handlers.
+    </description>
+    <tags>nservicebus newrelic analyzers roslyn NServiceBus.NewRelic.Analyzer vsix</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
