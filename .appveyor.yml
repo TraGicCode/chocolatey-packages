@@ -21,7 +21,7 @@ environment:
   # Therefore make sure the personal access token has public_repo & gist scope
   github_user_repo: tragiccode/chocolatey-packages
   github_api_key:
-    secure: lYtV00TAclXrkiQEXsYP0sXKgbixZOWZSXMc5n4v5GmLbawV5c1Apfz2Yw5dQZFH
+    secure: spYSI+BkK+6iSsViyStudmDvIHMWqgBNZumpgVUDASxapbSmwJt4k69rDStlRfLj
 
   github_username: tragiccode
   github_password:
