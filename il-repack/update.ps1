@@ -3,6 +3,11 @@ Import-Module AU
 # Find and replace content basd on latest version found
 function global:au_SearchReplace {
     @{
+        ".\tools\VERIFICATION.txt" = @{
+            "(?i)(\s*download the.*)<.*>" = "`$1<$($Latest.URL32)>"
+            "(?i)(^\s*checksum\s*type\:).*" = "`${1} $($Latest.ChecksumType32)"
+            "(?i)(^\s*checksum(32)?\:).*" = "`${1} $($Latest.Checksum32)"
+          }
     }
 }
 function global:au_BeforeUpdate {
