@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>il-repack</id>
-    <version>2.0.18</version>
+    <version>2.0.17</version>
     <title>ILRepack</title>
     <authors>gluck</authors>
     <owners>TraGicCode</owners>
