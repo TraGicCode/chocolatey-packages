@@ -1,12 +1,16 @@
 Import-Module AU
 
-
+# Find and replace content basd on latest version found
+function global:au_SearchReplace {
+    @{
+    }
+}
 function global:au_BeforeUpdate {
     Get-RemoteFiles -Purge -NoSuffix
 
     set-alias 7z $Env:chocolateyInstall\tools\7z.exe
     rm tools\*.exe
-    7z e tools\*.nupkg NuGet.exe -r -otools
+    7z e tools\*.nupkg ILRepack.exe -r -otools
     rm tools\*.nupkg
 }
 
