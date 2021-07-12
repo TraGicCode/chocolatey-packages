@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>il-repack</id>
+    <version>100.3.1</version>
+    <title>ILRepack</title>
+    <authors>gluck</authors>
+    <owners>TraGicCode</owners>
+    <projectUrl>https://github.com/gluck/il-repack</projectUrl>
+    <licenseUrl>https://github.com/gluck/il-repack/blob/master/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/gluck/il-repack</projectSourceUrl>
+    <docsUrl>https://github.com/gluck/il-repack</docsUrl>
+    <bugTrackerUrl>https://github.com/gluck/il-repack/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/il-repack</packageSourceUrl>
+    <releaseNotes>https://github.com/gluck/il-repack/blob/master/CHANGELOG.md</releaseNotes>
+    <iconUrl>https://image.flaticon.com/icons/png/512/944/944129.png</iconUrl>
+    <description>
+    ILRepack is meant at replacing ILMerge / Mono.Merge.
+
+    The former being closed-source (now open-sourced), impossible to customize, slow, resource consuming and many more. The later being deprecated, unsupported, and based on an old version of Mono.Cecil.
+
+    Here we're using latest (slightly modified) Cecil sources (0.9), you can find the fork here. Mono.Posix is also required (build only, it gets merged afterwards) for executable bit set on target file.
+    </description>
+    <tags>ilmerge ilrepack dotnet</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
