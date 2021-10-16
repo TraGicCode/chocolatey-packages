@@ -14,10 +14,9 @@ function global:au_SearchReplace {
 # Get latest version + download url of the software
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-
-
-    $htmlPage = Invoke-RestMethod -Method get -Uri "https://ravendb.net/downloads"
-    $allReleases = [Regex]::Match($htmlPage, "var builds = (.*);").Captures.Groups[1].Value | ConvertFrom-Json
+    
+    $json = Invoke-RestMethod -Method get -Uri "https://ravendb.net/wp-json/ravendb/downloads"
+    $allReleases = $json.downloadsInfo.ravenDbBuilds
     $allOrderedStableWindowsReleases = $allReleases | Where-Object -FilterScript { $PSItem.Branch -eq 'Stable' -and $PSItem.Platform -eq 'WindowsX64' } | Sort-Object -Property PublishedAt -Descending
     foreach($stableWindowsRelease in $allOrderedStableWindowsReleases) {
         $stableWindowsRelease | Add-Member -NotePropertyName StreamVersion -NotePropertyValue (Get-Version -Version $stableWindowsRelease.Version).ToString(3)
@@ -37,7 +36,6 @@ function global:au_GetLatest {
     }
 
     $latest
-
 }
 
 Update-Package -ChecksumFor 64
