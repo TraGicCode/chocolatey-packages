@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64bit   = 'https://hibernatingrhinos.com/downloads/RavenDB%20for%20Windows%20x64/52000'
-$checksum64 = '51dab4c7356c0a5c08f5db109b138168f247dde9b3f0dbaa8337ba9b22302944'
+$url64bit   = 'https://hibernatingrhinos.com/downloads/RavenDB%20for%20Windows%20x64/52012'
+$checksum64 = '44dec6642e83f5b0b952a317ce5e9003c10b5aef0f926873b486f2d9f947ee97'
 
 # Customization
 $service = "RavenDB"
