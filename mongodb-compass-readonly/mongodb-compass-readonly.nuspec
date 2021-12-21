@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongodb-compass-readonly</id>
-    <version>1.29.5</version>
+    <version>1.29.6</version>
     <title>MongoDB Compass Readonly (Install)</title>
     <authors>MongoDB Inc.</authors>
     <owners>TraGicCode</owners>
