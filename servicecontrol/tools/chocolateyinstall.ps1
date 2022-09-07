@@ -2,8 +2,8 @@
 
 $ErrorActionPreference = 'Stop'
 
-$url64bit   = 'https://github.com/Particular/ServiceControl/releases/download/4.23.0/Particular.ServiceControl-4.23.0.exe'
-$checksum64 = '555b5458f8cb56c1d3659a5a1e98b0c34a64c3d03f501505920fe8134f1be0bd'
+$url64bit   = 'https://github.com/Particular/ServiceControl/releases/download/4.25.1/Particular.ServiceControl-4.25.1.exe'
+$checksum64 = '58774f3fd5c9e292691448dcc138722d420c314def8ea98bbbdf6c4d825e4e94'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
