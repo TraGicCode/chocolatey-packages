@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/mongodb-js/compass</projectUrl>
     <licenseUrl>https://github.com/mongodb-js/compass/blob/master/LICENSE</licenseUrl>
     <projectSourceUrl>https://github.com/mongodb-js/compass</projectSourceUrl>
-    <docsUrl>https://docs.mongodb.com/compass/current</docsUrl>
+    <docsUrl>https://www.mongodb.com/docs/compass/current/</docsUrl>
     <bugTrackerUrl>https://jira.mongodb.org/projects/COMPASS/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/mongodb-compass</packageSourceUrl>
     <releaseNotes>https://docs.mongodb.com/compass/current/release-notes</releaseNotes>
