@@ -21,6 +21,21 @@ You might want to resubmit an existing package locally if validation failed and 
 > choco push .\mongodb-database-tools.100.1.1.nupkg
 ```
 
+## How do i quickly re-submit an older version of a package locally? (Manually)
+
+Sometimes a previous version was rejected and you need to repush it.
+
+1. Find download url
+2. Download file
+3. put download url in chocolateyinstall.ps1
+4. run follow command and put sha in chocolateyinstall.ps1
+checksum C:\Users\michaelf\Downloads\mongodb-compass-1.32.3-win32-x64.msi -t sha256
+5. Update version in nuspec file
+6. pack
+7. Test install
+ > choco install mongodb-compass -s . --force
+7. push
+
 ## Contributing
 
 1. Fork it ( <https://github.com/tragiccode/chocolatey-packages/fork> )
