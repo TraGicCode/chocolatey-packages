@@ -3,12 +3,12 @@ $ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  softwareName   = 'ServiceInsight'
+  softwareName   = 'ServiceInsight*'
   # Installer fails when fileType is not EXE and uninstall fails when fileType is not MSI.  It's confusing but it's the only way it works.
   # It's most likely because the below conditional in this file that deals with looking for certain keys in the registry if the file is an MSI
   fileType       = 'MSI'
   # MSI
-  silentArgs     = "/q"
+  silentArgs     = "/quiet /qn"
   validExitCodes = @(0)
 }
 
