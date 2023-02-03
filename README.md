@@ -25,16 +25,18 @@ You might want to resubmit an existing package locally if validation failed and 
 
 Sometimes a previous version was rejected and you need to repush it.
 
-1. Find download url
-2. Download file
+1. install the checksum chocolatey package
+    > choco install checksum -y
+2. Find download url and Download the installer
 3. put download url in chocolateyinstall.ps1
 4. run follow command and put sha in chocolateyinstall.ps1
-    > checksum C:\Downloads\mongodb-compass-1.32.3-win32-x64.msi -t sha256
+    > checksum C:\Downloads\serviceinsight.exe -t sha256
 5. Update version in nuspec file
 6. pack
+   >  choco pack .\serviceinsight.nuspec
 7. Test install
     > choco install serviceinsight -s . --force
-7. push
+8. push
 
 ## Contributing
 
