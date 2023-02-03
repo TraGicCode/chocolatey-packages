@@ -29,11 +29,11 @@ Sometimes a previous version was rejected and you need to repush it.
 2. Download file
 3. put download url in chocolateyinstall.ps1
 4. run follow command and put sha in chocolateyinstall.ps1
-checksum C:\Downloads\mongodb-compass-1.32.3-win32-x64.msi -t sha256
+    > checksum C:\Downloads\mongodb-compass-1.32.3-win32-x64.msi -t sha256
 5. Update version in nuspec file
 6. pack
 7. Test install
- > choco install mongodb-compass -s . --force
+    > choco install serviceinsight -s . --force
 7. push
 
 ## Contributing
