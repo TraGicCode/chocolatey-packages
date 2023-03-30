@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64bit   = 'https://github.com/mongodb-js/compass/releases/download/v1.36.1/mongodb-compass-readonly-1.36.1-win32-x64.msi'
-$checksum64 = '996c5d047991cc937a92cf17a115c72f4543819dd8e8b3562e7e698b4c60b02b'
+$url64bit   = 'https://github.com/mongodb-js/compass/releases/download/v1.36.2/mongodb-compass-readonly-1.36.2-win32-x64.msi'
+$checksum64 = '7ebfb52f773e0bad1dc315dfa60bf8083ec5ea96a7e2865a2e389d1760a7eb9a'
 
 
 $packageArgs = @{
