@@ -18,7 +18,7 @@ function global:au_GetLatest {
 
     @{
         Version = $latest_release.tag_name
-        URL64   = $latest_release.assets.browser_download_url
+        URL64   = $latest_release.assets.browser_download_url[0]
     }
 
 }
