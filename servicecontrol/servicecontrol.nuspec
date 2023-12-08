@@ -21,7 +21,7 @@ ServiceControl on installation utilizes a trial that expires after 14 days.  In 
 
 **NOTE: It's best practice to install the license VIA your organizations choice of configuration management tool (puppet, chef, ansible, etc.)**
     </description>
-    <tags>servicecontrol nservicebus particular admin</tags>
+    <tags>servicecontrol nservicebus particular portable</tags>
     <dependencies>
       <dependency id="netfx-4.6.2" />
     </dependencies>
