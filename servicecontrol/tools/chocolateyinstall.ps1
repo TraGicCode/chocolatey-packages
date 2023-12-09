@@ -19,11 +19,11 @@ if (!$pp.NoDesktop) {
   Write-Host "Creating desktop shortcut for ServiceControl..."
   # Create desktop shortcut
   $desktop = [System.Environment]::GetFolderPath('CommonDesktopDirectory')
-  Install-ChocolateyShortcut -ShortcutFilePath "$desktop\ServiceControl.lnk" -TargetPath $fileFullPath
+  Install-ChocolateyShortcut -ShortcutFilePath "$desktop\ServiceControl Management.lnk" -TargetPath $packageArgs.fileFullPath
 }
 
 if (!$pp.NoStartMenu) {
   Write-Host "Creating Start Menu shortcut for ServiceControl..."
   $startMenu = [System.Environment]::GetFolderPath('CommonStartMenu')
-  Install-ChocolateyShortcut -ShortcutFilePath "$startMenu\ServiceControl.lnk" -TargetPath $fileFullPath
+  Install-ChocolateyShortcut -ShortcutFilePath "$startMenu\ServiceControl Management.lnk" -TargetPath $packageArgs.fileFullPath
 }
