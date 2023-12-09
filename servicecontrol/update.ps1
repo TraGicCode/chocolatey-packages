@@ -11,6 +11,11 @@ function global:au_SearchReplace {
     }
 }
 
+
+function global:au_BeforeUpdate() {
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
+}
+
 # Get latest version + download url of the software
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -19,8 +24,11 @@ function global:au_GetLatest {
     @{
         Version = $latest_release.tag_name
         URL64   = $latest_release.assets.browser_download_url[0]
+        # Checksum64 = (Get-FileHash -Path $tempFile).Hash
+        # ChecksumType64 = 'SHA256'
     }
 
 }
 
-Update-Package -ChecksumFor 64
+# -ChecksumFor none and au_BeforeUpdate() is key for not embedding the .exe inside the nugetpackage..
+Update-Package -ChecksumFor none
