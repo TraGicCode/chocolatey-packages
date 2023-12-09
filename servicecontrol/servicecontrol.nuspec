@@ -3,7 +3,7 @@
   <metadata>
     <id>servicecontrol</id>
     <version>5.0.1</version>
-    <title>ServiceControl (Install)</title>
+    <title>ServiceControl</title>
     <authors>Particular Software</authors>
     <owners>Michael Fyffe</owners>
     <projectUrl>https://docs.particular.net/servicecontrol</projectUrl>
@@ -19,7 +19,19 @@ ServiceControl is a suite of back-end tools that collect useful information abou
 
 ServiceControl on installation utilizes a trial that expires after 14 days.  In order to install a non-trial license please follow the steps outlined in the documentation here https://docs.particular.net/servicecontrol/license.
 
+After installation, simply type Particular.ServiceControl.exe at your terminal to load the Service Control Management
+
+Since this is a portable application, after installation, Particular.ServiceControl.exe will be available on your PATH environment variable for opening the application.
+
 **NOTE: It's best practice to install the license VIA your organizations choice of configuration management tool (puppet, chef, ansible, etc.)**
+
+## Package Parameters
+
+- `/NoDesktop`: Disables creation of a shortcut on the desktop
+- `/NoStartMenu`: Disables creation of a shortcut in the start menu
+
+**Example:**
+`choco install servicecontrol --params '"/NoDesktop /NoStartMenu"'`
     </description>
     <tags>servicecontrol nservicebus particular portable</tags>
     <dependencies>
