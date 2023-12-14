@@ -34,9 +34,6 @@ Since this is a portable application, after installation, Particular.ServiceCont
 `choco install servicecontrol --params '"/NoDesktop /NoStartMenu"'`
     </description>
     <tags>servicecontrol nservicebus particular portable</tags>
-    <dependencies>
-      <dependency id="netfx-4.6.2" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
