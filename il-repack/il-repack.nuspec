@@ -13,13 +13,16 @@
     <bugTrackerUrl>https://github.com/gluck/il-repack/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/il-repack</packageSourceUrl>
     <releaseNotes>https://github.com/gluck/il-repack/blob/master/CHANGELOG.md</releaseNotes>
-    <iconUrl>https://image.flaticon.com/icons/png/512/944/944129.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tragiccode/chocolatey-packages/icons/merge.png</iconUrl>
     <description>
     ILRepack is meant at replacing ILMerge / Mono.Merge.
 
     The former being closed-source (now open-sourced), impossible to customize, slow, resource consuming and many more. The later being deprecated, unsupported, and based on an old version of Mono.Cecil.
 
     Here we're using latest (slightly modified) Cecil sources (0.9), you can find the fork here. Mono.Posix is also required (build only, it gets merged afterwards) for executable bit set on target file.
+
+    ## Icon Credits
+    - "Merge" icon by FreePik from www.flaticon.com
     </description>
     <tags>ilmerge ilrepack dotnet</tags>
   </metadata>
