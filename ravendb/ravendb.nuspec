@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ravendb</id>
-    <version>6.0.103</version>
+    <version>6.0.104</version>
     <title>RavenDB</title>
     <authors>Hibernating Rhinos</authors>
     <owners>TraGicCode</owners>
