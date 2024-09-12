@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>servicecontrol</id>
-    <version>5.8.0</version>
+    <version>5.9.0</version>
     <title>ServiceControl</title>
     <authors>Particular Software</authors>
     <owners>Michael Fyffe</owners>
