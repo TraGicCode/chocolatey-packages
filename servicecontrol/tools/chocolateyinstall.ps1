@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64bit      = 'https://github.com/Particular/ServiceControl/releases/download/6.2.1/Particular.ServiceControl-6.2.1.exe'
-$checksum64    = '1473a26f2c57e331bb6cbf0c81ec506828d1cc406bd1d497889bea99145b42ef'
+$url64bit      = 'https://github.com/Particular/ServiceControl/releases/download/6.3.0/Particular.ServiceControl-6.3.0.exe'
+$checksum64    = '04153da6aa34bbd18c4216a9a2554f1c0b68b1b102974a03d705939394326efc'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp = Get-PackageParameters
 
