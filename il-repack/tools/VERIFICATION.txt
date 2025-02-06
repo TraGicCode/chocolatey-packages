@@ -6,7 +6,7 @@ The embedded software have been downloaded from the software authors
 website located at <https://www.nuget.org/downloads>
 and can be verified by doing the following:
 
-1. Download the following <https://api.nuget.org/packages/ilrepack.2.0.36.nupkg>
+1. Download the following <https://api.nuget.org/packages/ilrepack.2.0.37.nupkg>
 2. Extract the downloaded nupkg file by using one of the following methods
   - Use the 7z utility: '7z.exe'
   - Using the powershell function 'Expand-Archive'
@@ -16,6 +16,6 @@ and can be verified by doing the following:
 4. The checksums should match the following:
 
   checksum type: sha256
-  checksum: 59733BF56F6A0810076F80328C161ED1A4F19624DC5685DE5F028A81B0659B38
+  checksum: A5044C094E70069B1F11830357F4E8E2225401B3CB0A2C4E443D40F8A1EEC6F3
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/gluck/il-repack/blob/master/LICENSE>
