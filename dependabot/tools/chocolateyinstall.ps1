@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64bit   = 'https://github.com/dependabot/cli/releases/download/v1.74.0/dependabot-v1.74.0-windows-amd64.zip.md5'
-$checksum64 = 'ac1eab354f43ee4b347b4c8609ede81c5ccfdf36323a5e6473ab0fa05ce11f56'
+$url64bit   = 'https://github.com/dependabot/cli/releases/download/v1.76.0/dependabot-v1.76.0-windows-amd64.zip.md5'
+$checksum64 = 'ced0c6d15382dc647cdf129ffd4e312741e0db50b190ebc70c1a5048f93c2450'
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
