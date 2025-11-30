@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>busly-cli</id>
-    <version>0.23.0</version>
+    <version>0.24.0</version>
     <title>Busly CLI</title>
     <authors>TraGicCode</authors>
     <owners>TraGicCode</owners>
