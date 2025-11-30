@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>busly-cli</id>
+    <version>0.23.0</version>
+    <title>Busly CLI</title>
+    <authors>TraGicCode</authors>
+    <owners>TraGicCode</owners>
+    <projectUrl>https://github.com/tragiccode/busly-cli</projectUrl>
+    <licenseUrl>https://github.com/tragiccode/busly-cli/blob/main/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/tragiccode/busly-cli</projectSourceUrl>
+    <docsUrl>https://tragiccode.com/busly-cli/</docsUrl>
+    <bugTrackerUrl>https://github.com/tragiccode/busly-cli/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/tragiccode/chocolatey-packages/tree/master/busly-cli</packageSourceUrl>
+    <releaseNotes>https://github.com/tragiccode/busly-cli/releases</releaseNotes>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tragiccode/busly-cli/website/static/img/busly-logo-128x128.png</iconUrl>
+    <description>
+    Busly CLI is a lightweight, open source command-line tool that allows developers to send messages to an NServiceBus endpoint at the power of their fingertips — no boilerplate code, no host applications, just quick and reliable messaging from your terminal.
+    </description>
+    <tags>nservicebus busly</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

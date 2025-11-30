@@ -13,6 +13,7 @@ function global:au_SearchReplace {
 
 # Get latest version + download url of the software
 function global:au_GetLatest {
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     $response = Invoke-RestMethod -Method Get -Uri "https://downloads.mongodb.org/tools/db/release.json"
     $windows_zip_archive = $response.versions.downloads.Where({ $PSItem.name -like 'windows'}).archive.url
 
