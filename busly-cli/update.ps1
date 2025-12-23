@@ -15,7 +15,7 @@ function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     $releases =  Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/tragiccode/busly-cli/releases'
     # Latest non-pre-release
-    $latest_release = $releases.Where({ $PSItem.name -match '^v[0-9]+\.[0-9]+\.[0-9]+$'})
+    $latest_release = $releases.Where({ $PSItem.name -match '^v[0-9]+\.[0-9]+\.[0-9]+$'})[0]
     $version = $latest_release.name
     $versionWithoutV = $version.Substring(1)
     foreach( $asset in $latest_release.assets) 
