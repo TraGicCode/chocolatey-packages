@@ -14,4 +14,3 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
-Install-BinFile -Name 'busly' -Path (Join-Path -Path $toolsdir -ChildPath 'BuslyCLI.Console.exe')
