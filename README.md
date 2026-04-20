@@ -45,3 +45,4 @@ Sometimes a previous version was rejected and you need to repush it.
 1. Commit your changes (`git commit -am 'Add some feature'`)
 1. Push to the branch (`git push origin my-new-feature`)
 1. Create a new Pull Request
+
