@@ -18,7 +18,7 @@ function global:au_BeforeUpdate() {
 
 # Get latest version + download url of the software
 function global:au_GetLatest {
-    [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     $latest_release = Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/Particular/ServiceControl/releases/latest'
 
     @{

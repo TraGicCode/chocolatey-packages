@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 # Get latest version + download url of the software
 function global:au_GetLatest {
-    [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     $releases =  Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/dependabot/cli/releases'
     # Latest non-pre-release
     $latest_release = $releases.Where({ $PSItem.name -match '^v[0-9]+\.[0-9]+\.[0-9]+$'})[0]
