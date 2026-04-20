@@ -20,7 +20,7 @@ function global:au_GetLatest {
     $versionWithoutV = $version.Substring(1)
     foreach( $asset in $latest_release.assets) 
     {
-        if ($asset.browser_download_url.Contains("dependabot-$version-windows-amd64.zip"))
+        if ($asset.browser_download_url.EndsWith("dependabot-$version-windows-amd64.zip"))
         {
             $zip_download_url = $asset.browser_download_url
         }
