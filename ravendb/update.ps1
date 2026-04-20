@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 
 # Get latest version + download url of the software
 function global:au_GetLatest {
-    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
     
     $json = Invoke-RestMethod -Method get -Uri "https://ravendb.net/wp-json/ravendb/downloads"
     $allReleases = $json.downloadsInfo.ravenDbBuilds
