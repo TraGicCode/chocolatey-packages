@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64bit   = 'https://github.com/TraGicCode/busly-cli/releases/download/v0.64.15/busly-cli-v0.64.15-win-x64.zip'
-$checksum64 = '33505cb957c026cb1ad4958375eed72a910e4338c5ffcc2a5d87b1c250231a69'
+$url64bit   = 'https://github.com/TraGicCode/busly-cli/releases/download/v0.64.16/busly-cli-v0.64.16-win-x64.zip'
+$checksum64 = '08e0da8ae751117a8e1ba85063e2046f420fde411175ae61198eb28ca50c433f'
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
