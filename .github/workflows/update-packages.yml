@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: chocolatey-community/chocolatey-au-action@v1
+      - uses: chocolatey-community/chocolatey-au-action@main
         with:
           package-paths: |
             busly-cli
