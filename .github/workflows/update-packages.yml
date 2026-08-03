@@ -1,0 +1,40 @@
+name: Chocolatey-AU Update
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  update:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: chocolatey-community/chocolatey-au-action@v1
+        with:
+          package-paths: |
+            busly-cli
+            dependabot
+            il-repack
+            mongodb-compass
+            mongodb-compass-isolated
+            mongodb-compass-readonly
+            mongodb-database-tools
+            ravendb
+            servicecontrol
+            serviceinsight
+            servicepulse
+          push: true
+          api-key: ${{ secrets.CHOCO_API_KEY }}
+          test-install: true
+          commit-changes: true
+          commit-message: 'chore: Chocolatey-AU update [skip ci]'
