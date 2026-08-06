@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: chocolatey-community/chocolatey-au-action@4d82e15dec9822c1e080febc9ed494a3ba708955
+      - uses: chocolatey-community/chocolatey-au-action@2.0
         with:
           package-paths: |
             automatic/*
