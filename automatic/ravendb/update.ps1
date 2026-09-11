@@ -18,7 +18,7 @@ function global:au_GetLatest {
     $json = Invoke-RestMethod -Method get -Uri "https://ravendb.net/wp-json/ravendb/downloads"
     $allReleases = $json.downloadsInfo.ravenDbBuilds
     $allOrderedStableWindowsReleases = $allReleases | Where-Object -FilterScript { $PSItem.Branch -eq 'Stable' -and $PSItem.Platform -eq 'WindowsX64' } | Sort-Object -Property PublishedAt -Descending
-    foreach($stableWindowsRelease in $allOrderedStableWindowsReleases) {
+    foreach ($stableWindowsRelease in $allOrderedStableWindowsReleases) {
         $stableWindowsRelease | Add-Member -NotePropertyName StreamVersion -NotePropertyValue (Get-Version -Version $stableWindowsRelease.Version).ToString(3)
     }
     $uniqueLatestStableWindowsReleases = $allOrderedStableWindowsReleases | Group-Object -Property StreamVersion
@@ -26,11 +26,13 @@ function global:au_GetLatest {
         Streams = [ordered] @{
         }
     }
-    foreach($stableWindowsRelease in $uniqueLatestStableWindowsReleases) {
+    foreach ($stableWindowsRelease in $uniqueLatestStableWindowsReleases) {
         $latest.Streams.Add($stableWindowsRelease.Group[0].StreamVersion,
             @{
-                Version = $stableWindowsRelease.Group[0].Version
-                URL64   = ($stableWindowsRelease.Group[0].Downloadables | Where-Object -FilterScript { $PSItem.Type -eq 'Package' }).DownloadUrl
+                Version      = $stableWindowsRelease.Group[0].Version
+                URL64        = ($stableWindowsRelease.Group[0].Downloadables | Where-Object -FilterScript { $PSItem.Type -eq 'Package' }).DownloadUrl
+                FileType     = 'zip'
+                FileNameBase = "RavenDB-$($stableWindowsRelease.Group[0].Version)-windows-x64"
             }
         )
     }
