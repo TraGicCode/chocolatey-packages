@@ -11,6 +11,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -Purge -FileNameBase "RavenDB-$($Latest.Version)-windows-x64" -NoSuffix
+}
+
 # Get latest version + download url of the software
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -29,11 +33,9 @@ function global:au_GetLatest {
     foreach ($stableWindowsRelease in $uniqueLatestStableWindowsReleases) {
         $latest.Streams.Add($stableWindowsRelease.Group[0].StreamVersion,
             @{
-                Version      = $stableWindowsRelease.Group[0].Version
-                URL64        = ($stableWindowsRelease.Group[0].Downloadables | Where-Object -FilterScript { $PSItem.Type -eq 'Package' }).DownloadUrl
-                FileName64   = "RavenDB-$($stableWindowsRelease.Group[0].Version)-windows-x64.zip"
-                FileNameBase = "RavenDB-$($stableWindowsRelease.Group[0].Version)-windows-x64"
-                FileType     = 'zip'
+                Version  = $stableWindowsRelease.Group[0].Version
+                URL64    = ($stableWindowsRelease.Group[0].Downloadables | Where-Object -FilterScript { $PSItem.Type -eq 'Package' }).DownloadUrl
+                FileType = 'zip'
             }
         )
     }
