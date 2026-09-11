@@ -31,8 +31,9 @@ function global:au_GetLatest {
             @{
                 Version      = $stableWindowsRelease.Group[0].Version
                 URL64        = ($stableWindowsRelease.Group[0].Downloadables | Where-Object -FilterScript { $PSItem.Type -eq 'Package' }).DownloadUrl
-                FileType     = 'zip'
+                FileName64   = "RavenDB-$($stableWindowsRelease.Group[0].Version)-windows-x64.zip"
                 FileNameBase = "RavenDB-$($stableWindowsRelease.Group[0].Version)-windows-x64"
+                FileType     = 'zip'
             }
         )
     }
