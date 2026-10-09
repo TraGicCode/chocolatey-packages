@@ -12,6 +12,7 @@ defaults:
   run:
     shell: pwsh
 
+
 jobs:
   update:
     runs-on: windows-latest
@@ -20,6 +21,8 @@ jobs:
       - uses: actions/checkout@v7
 
       - uses: chocolatey-community/chocolatey-au-action@3.0
+        env:
+          github_api_key: ${{ secrets.GITHUB_TOKEN }}
         with:
           package-paths: |
             automatic/*

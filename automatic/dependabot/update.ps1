@@ -13,15 +13,23 @@ function global:au_SearchReplace {
 # Get latest version + download url of the software
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    $releases =  Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/dependabot/cli/releases'
+    $ReleaseRequest = @{
+        Uri = 'https://api.github.com/repos/dependabot/cli/releases'
+    }
+
+    if (-not [string]::IsNullOrEmpty($env:github_api_key)) {
+        $ReleaseRequest.Headers = @{
+            Authorization = "Bearer $($env:github_api_key)"
+        }
+    }
+
+    $releases = Invoke-RestMethod @ReleaseRequest
     # Latest non-pre-release
-    $latest_release = $releases.Where({ $PSItem.name -match '^v[0-9]+\.[0-9]+\.[0-9]+$'})[0]
+    $latest_release = $releases.Where({ $PSItem.name -match '^v[0-9]+\.[0-9]+\.[0-9]+$' })[0]
     $version = $latest_release.name
     $versionWithoutV = $version.Substring(1)
-    foreach( $asset in $latest_release.assets) 
-    {
-        if ($asset.browser_download_url.EndsWith("dependabot-$version-windows-amd64.zip"))
-        {
+    foreach ( $asset in $latest_release.assets) {
+        if ($asset.browser_download_url.EndsWith("dependabot-$version-windows-amd64.zip")) {
             $zip_download_url = $asset.browser_download_url
         }
     }

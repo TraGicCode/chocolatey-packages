@@ -5,8 +5,8 @@ Import-Module Chocolatey-AU
 function global:au_SearchReplace {
     @{
         '.\tools\chocolateyinstall.ps1' = @{
-            "(^[$]url\s*=\s*)('.*')"   = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(^[$]url\s*=\s*)('.*')"                  = "`$1'$($Latest.URL32)'"
+            "(^[$]checksum\s*=\s*)('.*')"             = "`$1'$($Latest.Checksum32)'"
             "(?i)(^\s*File\s*=\s*`"[$]toolsPath\\).*" = "`${1}$($Latest.FileName32)`""
         }
     }
@@ -15,7 +15,17 @@ function global:au_SearchReplace {
 # Get latest version + download url of the software
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    $latest_release = Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/TraGicCode/NServiceBus.NewRelic.Analyzer/releases/latest'
+    $ReleaseRequest = @{
+        Uri = 'https://api.github.com/repos/TraGicCode/NServiceBus.NewRelic.Analyzer/releases/latest'
+    }
+
+    if (-not [string]::IsNullOrEmpty($env:github_api_key)) {
+        $ReleaseRequest.Headers = @{
+            Authorization = "Bearer $($env:github_api_key)"
+        }
+    }
+
+    $latest_release = Invoke-RestMethod @ReleaseRequest
 
     @{
         Version = $latest_release.tag_name
