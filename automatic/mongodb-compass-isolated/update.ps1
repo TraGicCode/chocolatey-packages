@@ -14,14 +14,22 @@ function global:au_SearchReplace {
 # Get latest version + download url of the software
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    $releases =  Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/mongodb-js/compass/releases'
+    $ReleaseRequest = @{
+        Uri = 'https://api.github.com/repos/mongodb-js/compass/releases'
+    }
+
+    if (-not [string]::IsNullOrEmpty($env:github_api_key)) {
+        $ReleaseRequest.Headers = @{
+            Authorization = "Bearer $($env:github_api_key)"
+        }
+    }
+
+    $releases = Invoke-RestMethod @ReleaseRequest
     # Latest non-pre-release
-    $latest_release = $releases.Where({ $PSItem.name -match '^[0-9]+\.[0-9]+\.[0-9]+$'})[0]
+    $latest_release = $releases.Where({ $PSItem.name -match '^[0-9]+\.[0-9]+\.[0-9]+$' })[0]
     $version = $latest_release.name
-    foreach( $asset in $latest_release.assets) 
-    {
-        if ($asset.browser_download_url.Contains("mongodb-compass-isolated-$version-win32-x64.msi"))
-        {
+    foreach ( $asset in $latest_release.assets) {
+        if ($asset.browser_download_url.Contains("mongodb-compass-isolated-$version-win32-x64.msi")) {
             $msi_download_url = $asset.browser_download_url
         }
     }

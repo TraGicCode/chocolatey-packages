@@ -14,7 +14,16 @@ function global:au_SearchReplace {
 # Get latest version + download url of the software
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    $latest_release = Invoke-RestMethod -Method Get -Uri 'https://api.github.com/repos/Particular/ServicePulse/releases/latest'
+    $ReleaseRequest = @{
+        Uri = 'https://api.github.com/repos/Particular/ServicePulse/releases/latest'
+    }
+
+    if (-not [string]::IsNullOrEmpty($env:github_api_key)) {
+        $ReleaseRequest.Headers = @{
+            Authorization = "Bearer $($env:github_api_key)"
+        }
+    }
+    $latest_release = Invoke-RestMethod @ReleaseRequest
 
     @{
         Version = $latest_release.tag_name
