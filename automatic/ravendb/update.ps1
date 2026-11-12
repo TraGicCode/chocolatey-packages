@@ -1,5 +1,25 @@
 Import-Module Chocolatey-AU
 
+function Get-RavenDBReleases {
+    $html = Invoke-RestMethod "https://ravendb.net/download"
+
+    $downloads = [regex]::Matches($html, 'self\.__next_f\.push\(\[1,\s*("(?:\\.|[^"\\])*")\]\)') |
+    ForEach-Object {
+        $chunk = ConvertFrom-Json $_.Groups[1].Value
+
+        $row = $chunk -split "`n" |
+        Where-Object { $_ -match '^\d+:\{"downloadsInfo":' } |
+        Select-Object -First 1
+
+        if ($row) {
+            ConvertFrom-Json ($row -replace '^\d+:', '')
+        }
+    } |
+    Where-Object { $_.downloadsInfo } |
+    Select-Object -First 1
+
+    return $downloads.downloadsInfo.ravenDbBuilds
+}
 
 # Find and replace content basd on latest version found
 function global:au_SearchReplace {
@@ -19,8 +39,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     
-    $json = Invoke-RestMethod -Method get -Uri "https://ravendb.net/wp-json/ravendb/downloads"
-    $allReleases = $json.downloadsInfo.ravenDbBuilds
+    $allReleases = Get-RavenDBReleases
     $allOrderedStableWindowsReleases = $allReleases | Where-Object -FilterScript { $PSItem.Branch -eq 'Stable' -and $PSItem.Platform -eq 'WindowsX64' } | Sort-Object -Property PublishedAt -Descending
     foreach ($stableWindowsRelease in $allOrderedStableWindowsReleases) {
         $stableWindowsRelease | Add-Member -NotePropertyName StreamVersion -NotePropertyValue (Get-Version -Version $stableWindowsRelease.Version).ToString(3)
